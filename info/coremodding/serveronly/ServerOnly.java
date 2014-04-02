@@ -29,7 +29,7 @@ public class ServerOnly
     }
     
     /**
-     * Handles the entityjoinworldevent so that once the player (or anything
+     * Handles the EntityJoinWorldEvent so that once the player (or anything
      * else) spawns, it ends.
      * 
      * @param evt
