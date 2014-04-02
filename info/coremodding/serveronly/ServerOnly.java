@@ -5,6 +5,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.integrated.IntegratedServer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -13,6 +14,7 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
  * @author James
  *         The main mod class
  */
+@Mod(modid = "ServerOnly", name = "ServerOnly", version = "v1")
 public class ServerOnly
 {
     
