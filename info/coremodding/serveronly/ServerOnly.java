@@ -19,6 +19,8 @@ public class ServerOnly
 {
     
     /**
+     * Handles Forge PostInit. This is where things are loaded.
+     * 
      * @param evt
      *            The event that triggered the method
      */
