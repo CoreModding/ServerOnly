@@ -1,8 +1,8 @@
 /**
- * The base package
+ * The base package for the mod.
  */
 /**
  * @author James
- *         The base package
+ *         The base package for the mod.
  */
 package info.coremodding.serveronly;
