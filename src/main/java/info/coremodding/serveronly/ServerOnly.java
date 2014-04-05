@@ -19,18 +19,6 @@ public class ServerOnly
 {
     
     /**
-     * Handles Forge PostInit. This is where things are loaded.
-     * 
-     * @param evt
-     *            The event that triggered the method
-     */
-    @EventHandler
-    public void postinit(FMLPostInitializationEvent evt)
-    {
-        MinecraftForge.EVENT_BUS.register(this);
-    }
-    
-    /**
      * Handles the EntityJoinWorldEvent so that once the player (or anything
      * else) spawns, it ends.
      * 
@@ -45,5 +33,17 @@ public class ServerOnly
         {
             Minecraft.stopIntegratedServer();
         }
+    }
+    
+    /**
+     * Handles Forge PostInit. This is where things are loaded.
+     * 
+     * @param evt
+     *            The event that triggered the method
+     */
+    @EventHandler
+    public void postinit(FMLPostInitializationEvent evt)
+    {
+        MinecraftForge.EVENT_BUS.register(this);
     }
 }
