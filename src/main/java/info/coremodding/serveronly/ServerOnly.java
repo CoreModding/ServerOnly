@@ -8,7 +8,7 @@ import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.event.ForgeSubscribe;
 
 /**
  * @author James
@@ -26,7 +26,7 @@ public class ServerOnly
      *            The event that triggered the method
      */
     @SuppressWarnings("static-method")
-    @SubscribeEvent
+    @ForgeSubscribe
     public void onEntityJoinWorldEvent(EntityJoinWorldEvent evt)
     {
         if (MinecraftServer.getServer() instanceof IntegratedServer)
